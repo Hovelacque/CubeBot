@@ -10,9 +10,13 @@ const styles = StyleSheet.create({
         height: 135,
         width: 135
     },
-    linha: {
-        flex: 1,
-        flexDirection: 'row'
+    button: {
+        height: 50,
+        width: 100,
+        margin: 2,
+        backgroundColor: 'gray',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 
