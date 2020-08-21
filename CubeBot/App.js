@@ -3,7 +3,7 @@ import Cubo from './src/screens/Cubo';
 
 export default function App() {
   return (
-    <Cubo />
+    <Cubo /> 
   );
 }
 
