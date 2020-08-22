@@ -6,7 +6,7 @@ export default function Peca(props) {
     let [backgroundColor, setBackgroundColor] = useState('white');
 
     useEffect(() => {
-        setBackgroundColor('white');
+        setBackgroundColor('gray');
         switch (props.cor) {
             case 1:
                 setBackgroundColor('yellow');
@@ -22,6 +22,9 @@ export default function Peca(props) {
                 break;
             case 5:
                 setBackgroundColor('red');
+                break;
+            case 6:
+                setBackgroundColor('white');
                 break;
         }
     })

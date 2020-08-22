@@ -1,9 +1,11 @@
 import React from 'react';
 import Cubo from './src/screens/Cubo';
+import Reading from './src/screens/Reading';
 
 export default function App() {
   return (
-    <Cubo />
+    // <Cubo />
+    <Reading />
   );
 }
 
