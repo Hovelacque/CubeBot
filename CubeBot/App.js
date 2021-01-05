@@ -1,9 +1,19 @@
 import React from 'react';
+import { CuboProvider } from './src/contexts/cubo';
+import { MovimentosProvider } from './src/contexts/movimentos';
+import { FormulasProvider } from './src/contexts/formulas';
+
 import Cubo from './src/screens/Cubo';
 
 export default function App() {
   return (
-    <Cubo /> 
+    <CuboProvider>
+      <MovimentosProvider>
+        <FormulasProvider>
+          <Cubo />
+        </FormulasProvider>
+      </MovimentosProvider>
+    </CuboProvider>
   );
 }
 
