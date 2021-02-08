@@ -1,11 +1,11 @@
 import React from 'react';
 import Cubo from './src/screens/Cubo';
 import Reading from './src/screens/Reading';
+import CropImage from './src/screens/CropImage';
 
 export default function App() {
   return (
-    // <Cubo />
-    <Reading />
+    <CropImage />
   );
 }
 

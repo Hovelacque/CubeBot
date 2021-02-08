@@ -34,13 +34,26 @@ const styles = StyleSheet.create({
     fontSize: 14
   },
 
+  linha: {
+    flex: 1,
+    flexDirection: 'row',
+  },
   mira: {
-    height: 100,
-    width: 100,
+    flex: 1,    
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'green'
+    backgroundColor: 'transparent',
+    borderColor: 'green',
+    borderWidth: 1
+  },
+
+  imagem: {
+    flex: 1,
+    margin: 5,
+    height: '100%',
+    width: '100%',
+    resizeMode: 'contain'
   }
 });
 
