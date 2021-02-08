@@ -1,11 +1,25 @@
 import React from 'react';
+import { CuboProvider } from './src/contexts/cubo';
+import { MovimentosProvider } from './src/contexts/movimentos';
+import { FormulasProvider } from './src/contexts/formulas';
+
 import Cubo from './src/screens/Cubo';
 import Reading from './src/screens/Reading';
 import CropImage from './src/screens/CropImage';
 
 export default function App() {
   return (
+  /*
     <CropImage />
+*/
+    <CuboProvider>
+      <MovimentosProvider>
+        <FormulasProvider>
+          <Cubo />
+        </FormulasProvider>
+      </MovimentosProvider>
+    </CuboProvider>
+	
   );
 }
 
