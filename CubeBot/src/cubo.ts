@@ -112,5 +112,15 @@ export class Cubo {
         this.linhaParaLinha(face.Esquerda, face.Tras, 0);
         this.setLinha(face.Esquerda, 0, linha0DoCentro);
         this.rodaHorario(face.Cima);
-    };
+    }
+
+    ui() {
+        let linha0DoCentro = this.getLinha(face.Centro, 0);
+        this.linhaParaLinha(face.Esquerda, face.Centro, 0);
+        this.linhaParaLinha(face.Tras, face.Esquerda, 0);
+        this.linhaParaLinha(face.Direita, face.Tras, 0);
+        this.setLinha(face.Direita, 0, linha0DoCentro);
+
+        this.rodaAntiHorario(face.Cima);
+    }
 }

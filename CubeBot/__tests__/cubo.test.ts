@@ -54,7 +54,7 @@ describe('Cubo', () => {
 });
 
 describe('Movimentos Básicos', () => {
-    test('U', () => {
+    test("U", () => {
         //Arrange
         let cubo = new Cubo();
         //Act
@@ -64,5 +64,16 @@ describe('Movimentos Básicos', () => {
         expect(cubo.getLinha(face.Direita, 0)).toEqual([cor.Vermelha, cor.Vermelha, cor.Vermelha]);
         expect(cubo.getLinha(face.Tras, 0)).toEqual([cor.Verde, cor.Verde, cor.Verde]);
         expect(cubo.getLinha(face.Esquerda, 0)).toEqual([cor.Laranja, cor.Laranja, cor.Laranja]);
+    });
+    test("U'", () => {
+        //Arrange
+        let cubo = new Cubo();
+        //Act
+        cubo.ui();
+        //Assert
+        expect(cubo.getLinha(face.Centro, 0)).toEqual([cor.Verde, cor.Verde, cor.Verde]);
+        expect(cubo.getLinha(face.Direita, 0)).toEqual([cor.Laranja, cor.Laranja, cor.Laranja]);
+        expect(cubo.getLinha(face.Tras, 0)).toEqual([cor.Azul, cor.Azul, cor.Azul]);
+        expect(cubo.getLinha(face.Esquerda, 0)).toEqual([cor.Vermelha, cor.Vermelha, cor.Vermelha]);
     });
 });
